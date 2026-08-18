@@ -1,0 +1,105 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="en-us">
+<title>Fill in the form below to order</title>
+<!--mstheme--><link rel="stylesheet" type="text/css" href="_themes/eclipse/ecli1011.css"><meta name="Microsoft Theme" content="eclipse 1011, default">
+</head>
+
+<body>
+
+<p>
+<!--webbot bot="PurpleText" preview="Feedback Form - Customize the form below to collect the information you need. By default, the form data is saved to a text file on the web server using the FrontPage Save Results component. Edit the Form Properties to change this behavior." -->
+</p>
+<hr>
+<p>Fill in the form below to order your hosting service.</p>
+<form method="POST" action="_vti_bin/shtml.exe/order%20form.htm" onsubmit="return FrontPage_Form1_Validator(this)" language="JavaScript" name="FrontPage_Form1" webbot-action="--WEBBOT-SELF--">
+  <!--webbot bot="SaveResults" U-File="_private/feedback.csv" S-Format="TEXT/CSV" S-Label-Fields="TRUE" B-Reverse-Chronology="FALSE" S-Email-Format="TEXT/PRE" S-Email-Address="paul@pacific-host.com" B-Email-Label-Fields="TRUE" S-Date-Format="%d %b %Y" S-Time-Format="%H:%M:%S" S-Builtin-Fields="REMOTE_NAME REMOTE_USER HTTP_USER_AGENT Date Time" startspan --><input TYPE="hidden" NAME="VTI-GROUP" VALUE="0"><!--webbot bot="SaveResults" i-checksum="43374" endspan -->
+  <p><strong>What plan are you ordering?</strong></p>
+  <dl>
+    <dd><input type="radio" name="MessageType" value="Platinum" checked>Platinum&nbsp;
+    <input type="radio" name="MessageType" value="Gold">Gold
+    <input type="radio" name="MessageType" value="Silver">Silver
+    <input type="radio" name="MessageType" value="Mail 5 pack">Mail 5 pack
+    <input type="radio" name="MessageType" value="Mail 10 pack">Mail 10 pack
+    <input type="radio" name="MessageType" value="Forwarding">Forwarding</dd>
+  </dl>
+  <p><strong>Tell us your domain name.</strong></p>
+  <dl>
+    <dd><select name="Service" size="1">
+    <option selected>Hosting</option>
+    <option>Mail</option>
+    <option>Forwarding</option>
+    </select> Domain:&nbsp;
+    <input type="text" size="26" maxlength="256" name="Domain"><select size="1" name="extension">
+    <option selected>.com</option>
+    <option>.org</option>
+    <option>.net</option>
+    <option>.us</option>
+    <option>.biz</option>
+    </select><br>
+&nbsp;</dd>
+    <dt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Preferred User Name:
+    <input type="text" name="username" size="8"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Preferred Password:&nbsp;&nbsp;
+    <input type="password" name="password" size="20">&nbsp; </dt>
+  </dl>
+  <p><strong>Enter any special instructions in the space provided below:</strong></p>
+  <dl>
+    <dd><textarea name="Requests" rows="5" cols="42"></textarea></dd>
+  </dl>
+  <p><strong>Tell us how to get in touch with you:</strong></p>
+  <dl>
+    <dd>
+    <table>
+      <tr>
+        <td>Name</td>
+        <td><input type="text" size="35" maxlength="256" name="Name"></td>
+      </tr>
+      <tr>
+        <td>E-mail</td>
+        <td><input type="text" size="35" maxlength="256" name="email"></td>
+      </tr>
+      <tr>
+        <td>Tel</td>
+        <td><input type="text" size="35" maxlength="256" name="UserTel"></td>
+      </tr>
+      <tr>
+        <td>CC#</td>
+        <td><input type="text" size="16" maxlength="256" name="CC"></td>
+      </tr>
+      <tr>
+        <td>Exp.</td>
+        <td><input type="text" size="7" name="Exp" maxlength="7"></td>
+      </tr>
+    </table>
+    <table id="table1">
+      <tr>
+        <td>Amount to be Charged</td>
+        <td width="120">
+        &nbsp;<!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." i-maximum-length="7" --><input type="text" size="16" name="amount" maxlength="7"></td>
+      </tr>
+    </table>
+    <p>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="hidden" name="cmd" value="_s-xclick">
+</form>
+  <dl>
+    <dd><input type="checkbox" name="ContactRequested" value="ContactRequested"> 
+    Please contact me as soon as possible regarding this matter.</dd>
+  </dl>
+  <p><input type="submit" value="Submit Comments">
+  <input type="reset" value="Clear Form"></p>
+</form>
+<hr>
+<h5><br>
+Copyright © 2007 pacific-host.com. All rights reserved.<br>
+Revised: <!--webbot bot="TimeStamp" s-type="EDITED" s-format="%m/%d/%y" startspan -->09/15/07<!--webbot bot="TimeStamp" i-checksum="13206" endspan -->.</h5>
+
+</body>
+
+</html>
